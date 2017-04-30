@@ -47,7 +47,7 @@ object ScalaDciBuild extends Build with Publishing {
     resolvers ++= Seq(Resolver.sonatypeRepo("releases"), Resolver.sonatypeRepo("snapshots")),
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-reflect" % scalaVersion.value,
-      "org.specs2" %% "specs2" % "2.4.11" % "test"
+      "org.specs2" %% "specs2" % "2.3.12" % "test"
     ),
     addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0-M5" cross CrossVersion.full)
   )
